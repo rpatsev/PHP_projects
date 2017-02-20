@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Twig</title>
+</head>
+<body>
+
+{% if 1 != 2 %}
+  1 != 2
+{% endif %}
+{% if not x %}
+	x
+{% endif %}
+{% if six is sameas(6) %}
+	<h1>YES</h1>
+{% endif %}
+{% if number is divisibleby(4) %}
+	<h1>OK</h1>
+{% else %}
+	 <h1>NO</h1>
+{% endif %}
+{% for item in 'a'..'w' %}
+    <span>{{item}}</span>
+{% endfor %}
+<hr>
+{% for item in 1..10 if item is even %}
+    <span>#{{loop.index0}}.{{item}}</span>
+{% endfor %}
+<hr>
+{% for item in 1..10 %}
+    <span>#{{loop.revindex}}.{{item}}</span>
+{% endfor %}
+{% do 1+1 %}
+
+{% spaceless %}
+    <h1>hello world!!   </h1>
+    <b>bye</b>
+{% endspaceless %}
+
+{% filter raw %}
+<h1>hello world</h1>
+{% endfilter %}
+
+{{x|upper }}
+
+	{% set x = 'world' %}
+	<h1>Hello, {{x}}!</h1>
+	<h1>Hello, {{x}}!</h1>
+	<h1>Hello, {{x}}!</h1>
+		{{a[0]}}
+		{{a[1]}}
+		{{a.prop}}
+</body>
+</html>

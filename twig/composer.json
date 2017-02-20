@@ -1,0 +1,7 @@
+{
+    "require": {
+        "fxp/composer-asset-plugin": "^1.2",
+        "symfony/var-dumper": "^2.8",
+        "twig/twig": "^1.30"
+    }
+}
