@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Twig</title>
+	<title>{{title}}</title>
 </head>
 <body>
 
@@ -83,6 +83,14 @@
 		{% endfor %}
 	</ul>
 
-	
+	<hr>
+
+	{{ y | default ('empty')}}
+<br>
+	{{date('now') | date('Y, jS F. h:i:s l')}}
+	{{date('now') | date('r')}}
+<hr>
+	{% include 'header.twig' with {'title': 'some title'} %}
+
 </body>
 </html>
