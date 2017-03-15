@@ -1,0 +1,12 @@
+{
+    "require": {
+        "fxp/composer-asset-plugin": "^1.2",
+        "symfony/var-dumper": "^2.8",
+        "doctrine/orm": "^2.5"
+    },
+    "autoload": {
+    	"psr-4": {
+    		"":"src"
+    	}
+    }
+}
