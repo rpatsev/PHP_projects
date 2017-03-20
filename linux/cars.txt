@@ -1,0 +1,15 @@
+/d/OpenServer/domains/localhost/PHP_projects/linux
+total 1
+drwxr-xr-x 1 rpacev 1049089  0 мар 17 17:33 ./
+drwxr-xr-x 1 rpacev 1049089  0 мар 17 16:15 ../
+-rw-r--r-- 1 rpacev 1049089  0 мар 17 17:33 apple.txt
+-rw-r--r-- 1 rpacev 1049089 51 мар 17 17:38 cars.txt
+-rw-r--r-- 1 rpacev 1049089  0 мар 17 16:16 file.txt
+-rw-r--r-- 1 rpacev 1049089  0 мар 17 16:16 filecopy.txt
+total 1
+drwxr-xr-x 1 rpacev 1049089   0 мар 17 17:33 ./
+drwxr-xr-x 1 rpacev 1049089   0 мар 17 16:15 ../
+-rw-r--r-- 1 rpacev 1049089   0 мар 17 17:33 apple.txt
+-rw-r--r-- 1 rpacev 1049089 389 мар 17 17:44 cars.txt
+-rw-r--r-- 1 rpacev 1049089   0 мар 17 16:16 file.txt
+-rw-r--r-- 1 rpacev 1049089   0 мар 17 16:16 filecopy.txt

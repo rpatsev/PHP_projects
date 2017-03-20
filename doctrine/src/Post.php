@@ -2,12 +2,17 @@
 
 /**
 * @Entity
+* @HasLifecycleCallbacks
 * @Table(name="posts")
 */
 
 
 class Post {
-	/**
+    /**
+    * @Column(type="date")
+    */
+    private $createdAt;
+    /**
 	* @Id
 	* @GeneratedValue
 	* @Column(type="integer")
@@ -79,4 +84,36 @@ class Post {
     {
         return $this->user;
     }
+
+    /**
+     * Set createdAt
+     *
+     * @param \DateTime $createdAt
+     *
+     * @return Post
+     */
+    public function setCreatedAt($createdAt)
+    {
+        $this->createdAt = $createdAt;
+
+        return $this;
+    }
+
+    /**
+     * Get createdAt
+     *
+     * @return \DateTime
+     */
+    public function getCreatedAt()
+    {
+        return $this->createdAt;
+    }
+    /**
+    * @PrePersist
+    */
+
+    public function setInitialDate(){
+        $this->setCreatedAt(new DateTime);
+    }
+
 }
